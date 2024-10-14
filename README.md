@@ -1,5 +1,3 @@
-#### Documentation under process!!!
-
 # <p align="center">DDoS Attack Detection and Mitigation using Machine Learning</p>
 `DDoS Attack Detection and Mitigation using Machine Learning`
 
