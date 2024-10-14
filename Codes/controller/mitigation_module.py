@@ -198,3 +198,30 @@ class SimpleMonitor13(switchm.SimpleSwitch13):
 
         except:
             pass
+
+def _block_traffic_from_ip(self, ip):
+    # Iterate over all datapaths (switches)
+    for datapath in self.datapaths.values():
+        parser = datapath.ofproto_parser
+        ofproto = datapath.ofproto
+        
+        # Create a match rule to match all traffic from the malicious IP address
+        match = parser.OFPMatch(eth_type=0x0800, ipv4_src=ip)
+        
+        # Create an instruction to drop the traffic
+        instructions = []
+        
+        # Create flow mod (drop) message and send it to the switch
+        mod = parser.OFPFlowMod(
+            datapath=datapath,
+            priority=10,  # Give this a high priority to ensure the rule is applied
+            match=match,
+            command=ofproto.OFPFC_ADD,
+            instructions=instructions,
+            buffer_id=ofproto.OFP_NO_BUFFER,
+            idle_timeout=60,  # Optional: set the idle timeout
+            hard_timeout=300   # Optional: set the hard timeout
+        )
+        
+        datapath.send_msg(mod)
+        self.logger.info(f"Blocking traffic from IP {ip} on datapath {datapath.id}")
