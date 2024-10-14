@@ -7,7 +7,6 @@
 - [Motivation](#motivation)
 - [Objectives](#objectives)
 - [Installation](#installation)
-- [Literature Survey](#literature-Survey)
 - [Implemented System](#implemented-system)
 - [Description of the Implemented system](#description-of-the-implemented-system)
 - [Software requirements specification](#software-requirements-specification)
