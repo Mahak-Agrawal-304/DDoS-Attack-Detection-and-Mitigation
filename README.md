@@ -16,7 +16,6 @@
 - [Testing](#testing)
 - [Results & Discussion](#results-&-discussion)
 - [Conclusion](#conclusion)
-- [References](#references)
 - [Appendix](#appendix)
 <br>
 <!-- --------------------------------------------------------------------------------------------------------------------------------------------------------- -->
