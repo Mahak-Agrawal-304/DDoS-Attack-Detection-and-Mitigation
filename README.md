@@ -107,24 +107,9 @@ hping3 -S -V -d 120 -w 64 -p 80 --rand-source --flood
 # udp flood
 hping3 -2 -V -d 120 -w 64 -p 80 --rand-source --flood
 ```
-<h1>You can try out the project using our vm too</h1>
-
-<h2>[Link to download our Mininet VM and Ryu Controller](shorturl.at/szH58)</h2>
-
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
-<!-- --------------------------------------------------------------------------------------------------------------------------------------------------------- -->
-
-<h2>Literature Survey</h2>
-[1] This paper proposed a model which is able to detect and mitigate DDoS attacks automatically in SDN networks using ML.All of the switches' traffic flow entries are periodically collected by the model, which then extracts the native flow features and expands them by incorporating new features. A detection module uses five features to categorize each flow as normal or anomalous. When an attack is discovered, its source is prevented. Six ML algorithms were assessed with regard to the classification ML method utilized in the detection module, including LR, NB, KNN, SVM, DT, and RF. The outcomes of the experiment demonstrated that RF is the best classifier for the generated network. Without losing typical performance, the model was able to swiftly and effectively identify and block attacks. 
-
-[2] This work proposes a method of DDoS attack detection based on deep belief network feature extraction and LSTM model.  This technique uses deep learning to extract IP packet attributes, builds an LSTM traffic prediction model, and then recognises DDoS attacks using the built-in LSTM model. Technology for detecting DDoS attacks is appropriate for this system. The model can effectively forecast the pattern of typical network traffic, spot irregularities brought on by DDoS attacks, and be used to develop more DDoS attack detection techniques in the future.
-
-[3] In this work, the authors proposed a model which analyzes the correlation information of flows in data centers. It offers a reliable method of detecting DDoS attacks based on CKNN (K-nearest neighbors traffic categorization with correlation analysis).
-
-[4] This paper proposes a new model to detect DDoS attacks in SDN based on SVM . Firstly a trained Support Vector Machine (SVM) approach is used by the model to extract numerous important features from the packet-in messages and measure the distribution of each feature using entropy. Studies reveal that this technique is highly effective at both real-time DDoS mitigation and security event detection.
 
 <!-- --------------------------------------------------------------------------------------------------------------------------------------------------------- -->
 
@@ -211,8 +196,7 @@ software-defined networking. This controller resides on a server and manages pol
 
 <!-- --------------------------------------------------------------------------------------------------------------------------------------------------------- -->
 
-<h3>Architecture of the System</h3>
-#### Infrastructure layer:
+<h4>Infrastructure layer:</h4>
 The infrastructure layer is made up of the physical switches or routers in the network which forward traffic according to the instructions from the control plane.
 
 <!-- --------------------------------------------------------------------------------------------------------------------------------------------------------- -->
@@ -313,55 +297,6 @@ The outcomes of the experiment demonstrated that RF is the best classifier for t
 
 <!-- --------------------------------------------------------------------------------------------------------------------------------------------------------- -->
 
-<h2> References</h2>
-
-Here are some related papers
-
-[[1] Dong Li,Chang Yu, Qizhao Zhou and Junqing Yu .”Using SVM to Detect DDoS Attacks in SDN Network.” 2018 IOP Conf. Ser.: Mater. Sci. Eng. 466 012003,2018 .](https://iopscience.iop.org/article/10.1088/1757-899X/466/1/012003/meta)
-
-[[2] Yijie Li, Boyi Liu, Shang Zhai and Mingrui Chen ,”DDoS attack detection method based on feature extraction of deep belief networks.”,IOP Conference Series: Earth and Environmental Science, Volume 252, Issue 3,2019.](https://iopscience.iop.org/article/10.1088/1755-1315/252/3/032013/met)
-
-[[3] Peng Xiao,Wenyu Qu,Heng Qi ,Zhiyang Li.”Detecting DDoS attacks against data centers with correlation analysis.”,Computer Communications 67,2015.](https://www.sciencedirect.com/science/article/abs/pii/S0140366415002285)
-
-[[4] Fatima Khashab, Joanna Moubarak, Antoine Feghali , and Carole Bassil.”DDoS Attack Detection and Mitigation in SDN using Machine Learning”,IEEE 7th International Conference on Network Softwarization (NetSoft),2021.](https://ieeexplore.ieee.org/abstract/document/9492558/)
-
-[[5] Bawany NZ, Shamsi JA, Salah K. DDoS attack detection and mitigation  using
- SDN:     methods, practices, and solutions. Arabian Journal for Science and 
- Engineering. 2017 Feb;42(2):425-41.](https://link.springer.com/article/10.1007/s13369-017-2414-5)
-
-
-[[6] Dharma, N.G., Muthohar, M.F., Prayuda, J.A., Priagung, K. and Choi, D., 2015,
-August. Time-based DDoS detection and mitigation for SDN controller. In 
-2015 17th Asia-Pacific Network Operations and Management Symposium (APNOMS) (pp. 550-553). IEEE.](https://ieeexplore.ieee.org/abstract/document/7275389/)
-            
-[[7]  da Silveira Ilha, A., Lapolli, A.C., Marques, J.A. and Gaspary, L.P., 2020. Euclid: A fully in-network, P4-based approach for real-time DDoS attack detection and mitigation. IEEE Transactions on Network and Service Management, 18(3), pp.3121-3139.](https://ieeexplore.ieee.org/abstract/document/9311137/)
-
-    
-[[8] Singh, J. and Behal, S., 2020. Detection and mitigation of DDoS attacks in SDN: A comprehensive review, research challenges and future directions. Computer Science Review, 37, p.100279.](https://www.sciencedirect.com/science/article/abs/pii/S1574013720301647)
-
-
-[[9] Mihoub A, Fredj OB, Cheikhrouhou O, Derhab A, Krichen M. Denial of service attack detection and mitigation for internet of things using looking-back-enabled machine learning techniques. Computers & Electrical Engineering. 2022 Mar 1;98:107716.](https://www.sciencedirect.com/science/article/abs/pii/S0045790622000337)
-
-
-[[10] Miao, R., Yu, M. and Jain, N., 2014. Nimbus: cloud-scale attack detection and mitigation. Acm sigcomm computer communication review, 44(4), pp.121-122.](https://www.researchgate.net/publication/286424649_NIMBUS)
-
-
-[[11] Srinivasan, Karthik, Azath Mubarakali, Abdulrahman Saad Alqahtani, and A. Dinesh Kumar. "A survey on the impact of DDoS attacks in cloud computing: prevention, detection and mitigation techniques." In Intelligent Communication Technologies and Virtual Mobile Networks, pp. 252-270. Springer, Cham, 2019.](https://www.springerprofessional.de/en/a-survey-on-the-impact-of-ddos-attacks-in-cloud-computing-preven/17060314)
-
-
-[[12] Kautish, Sandeep, A. Reyana, and Ankit Vidyarthi. "SDMTA: Attack Detection and Mitigation Mechanism for DDoS Vulnerabilities in Hybrid Cloud Environment." IEEE Transactions on Industrial Informatics (2022).](https://ieeexplore.ieee.org/document/9695185)
-
-
-[[13] Gadze, James Dzisi, Akua Acheampomaa Bamfo-Asante, Justice Owusu Agyemang, Henry Nunoo-Mensah, and Kwasi Adu-Boahen Opare. "An investigation into the application of deep learning in the detection and mitigation of DDOS attack on SDN controllers." Technologies 9, no. 1 (2021): ](https://www.mdpi.com/2227-7080/9/1/14)
-
-
-[[14] Jaramillo, L.E.S., 2018. Malware detection and mitigation techniques: lessons learned from Mirai DDOS attack. Journal of Information Systems Engineering & Management, 3(3), p.19.](https://www.researchgate.net/publication/326425061_Malware_Detection_and_Mitigation_Techniques_Lessons_Learned_from_Mirai_DDOS_Attack)
-
-
-[[15] Al-Duwairi, B., Al-Kahla, W., AlRefai, M.A., Abedalqader, Y., Rawash, A. and Fahmawi, R., 2020. SIEM-based detection and mitigation of IoT-botnet DDoS attacks. International Journal of Electrical and Computer Engineering, 10(2), p.2182.](https://ijece.iaescore.com/index.php/IJECE/article/view/20812)
-
-
-<!-- --------------------------------------------------------------------------------------------------------------------------------------------------------- -->
 
 <h2> Appendix</h2>
 
