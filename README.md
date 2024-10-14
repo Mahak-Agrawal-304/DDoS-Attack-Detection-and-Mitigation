@@ -12,7 +12,6 @@
 - [Software requirements specification](#software-requirements-specification)
 - [System Design](#system-design)
 - [Implementation](#implementation)
-- [Testing](#testing)
 - [Results & Discussion](#results-&-discussion)
 - [Conclusion](#conclusion)
 - [Appendix](#appendix)
@@ -28,7 +27,7 @@ The hardest part about mitigating a DDoS attack is that often it’s virtually i
 
 <!-- --------------------------------------------------------------------------------------------------------------------------------------------------------- -->
 
-<h2> Motivation</h2>
+<h2>Motivation</h2>
 
 For enterprises operating at the edge with mission-critical activities that cannot afford downtime, DDoS mitigation as a protective layer is crucial. DDoS mitigation contributes to maintaining such activities' and services' ongoing availability. SDN allows for network design, construction, and operation. Attacks via distributed denial-of-service (DDoS) represent a serious risk to data centers.
 New security concerns and assaults, particularly Distributed Denial of Service (DDoS) attacks, are frequently launched against SDN networks.
@@ -266,16 +265,8 @@ Once a malicious flow has been verified by the anomaly detection module, the Ano
 
 <!-- --------------------------------------------------------------------------------------------------------------------------------------------------------- -->
 
-<h2> Testing</h2>
 
-<!-- --------------------------------------------------------------------------------------------------------------------------------------------------------- -->
-
-<h3> Test Plan and Test Cases:</h3>
-
-
-<!-- --------------------------------------------------------------------------------------------------------------------------------------------------------- -->
-
-<h2> Results & Discussion</h2>
+<h2>Results & Discussion</h2>
 
 After designing the attack detection and mitigation method,the results are tested and evaluated.  The evaluation of the framework includes the evaluation of the different ML algorithms, and a comparison of the different models used. The below table shows the accuracies of different models used:
 
